@@ -1,47 +1,67 @@
-<h1 align="center">Hey, I'm Matías 👋</h1>
+<a href="https://matiasgarcia.dev">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/header-narrow.svg">
+    <img src="assets/header.svg" alt="Matías García, Full Stack Engineer at Bettergy. I build products end to end, from the database to the deploy." width="100%">
+  </picture>
+</a>
 
-<p align="center">
-  Web developer at <a href="https://bettergy.es">Bettergy</a> · frontend by trade, everything else by scope creep
-</p>
+**Full Stack Engineer at Bettergy, an energy-tech product company.** Django and PostgreSQL on the back, Next.js and TypeScript on the front, Docker and Kubernetes to run it, and Claude Code in the loop to ship faster without dropping quality.
 
----
+I lead a team of five technically (architecture, code reviews, standards), and the three juniors I onboarded each shipped to production in their first month.
 
-I started out building frontends. A year-and-something later, my days also include Django APIs, a Kubernetes cluster, and mentoring our junior devs — who think I know what I'm doing (please don't tell them).
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/records-narrow.svg">
+  <img src="assets/records.svg" alt="Personal records from production at Bettergy: API response time 90 s to 1 s; infrastructure bill €1,500 to €800 a month; tickets per sprint 10 to 30; releases per month 2 to 4; QA first-pass rate 60% to 85%; 1-year chart load 5 s to under 1 s. MIOT Sentra live in under two months, with 10+ clients and 100+ connected devices in its first six." width="100%">
+</picture>
 
-When I get to pick the tools, it's Next.js or Astro with Tailwind, and I care an unreasonable amount about details nobody asked for: motion that feels right, layouts designed for thumbs before mice, and repos that are actually pleasant to review.
+How those numbers happened:
 
-<!--
-## 🔨 Featured project
+- **MIOT Sentra**, an IoT monitoring platform for energy installations, built from scratch with one other developer and live in under two months. Its time series run on TimescaleDB hypertables, which took a 1-year chart from ~5 s to under a second.
+- **Claude Code workflow** with tickets of two days or less: about 10 → 30 tickets per two-week sprint, testing and QA included.
+- **Linters, formatters and strict test rules**: releases went from twice a month to once or twice a week.
+- **Django ORM rewrite** on a core endpoint: from up to 6,000 database calls per request down to 7.
+- **Automated cleanup of stale Velero backups** on Kubernetes, worth about €8,400 a year.
 
-### [project-name](https://github.com/matgarfer499/project-name)
+## Featured projects
 
-One or two sentences: what it does, who it's for, and the one technical thing you're proud of.
+<a href="https://github.com/matgarfer499/ai-personal-coach">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/ai-personal-coach-narrow.svg">
+    <img src="assets/ai-personal-coach.svg" alt="ai-personal-coach: personal trainer and nutrition coach that runs inside Claude Code. Stack: Python 3.12, uv, pytest, Claude Code." width="100%">
+  </picture>
+</a>
 
-![screenshot or GIF](link-to-screenshot.png)
+For healthy adults who want a lasting change in body and health. Claude does the conversation; every number (calories, macros, heart-rate zones, loads, weight trend) comes from a tested Python CLI, so the model never does the maths in its head. Every piece of advice traces back to one of 469 graded rules backed by 890 sources, and safety flags from the health screening are enforced in code.
 
-**Built with:** X · Y · Z — [live demo](https://...)
--->
+<img src="https://raw.githubusercontent.com/matgarfer499/ai-personal-coach/main/assets/demo.gif" alt="Terminal demo: coach macros, a squat load increase, then a cardiac symptom stops all training" width="100%">
 
-## What I work with
+**[Repository →](https://github.com/matgarfer499/ai-personal-coach)**
 
-**Most days:**
+<br>
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+<a href="https://github.com/matgarfer499/portfolio-web">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/portfolio-web-narrow.svg">
+    <img src="assets/portfolio-web.svg" alt="portfolio-web: my portfolio, built like an athlete's record board. Stack: Next.js 16, React 19, Tailwind 4, Playwright." width="100%">
+  </picture>
+</a>
 
-**Also in the toolbox:**
+A sports-poster portfolio for engineers and clients who want the numbers first; this page borrows its look. Every section is server-rendered and readable without JavaScript, all motion is CSS and stops with `prefers-reduced-motion`, and feature folders never import each other (ESLint enforces it). There are six hidden trophies if you go looking.
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+**[Live site →](https://matiasgarcia.dev)** · **[Repository →](https://github.com/matgarfer499/portfolio-web)**
 
-## Say hi
+## Stack
 
-I'm happy at Bettergy, but I'm **open to hearing about interesting offers** — if you're building something good and need someone who can take it from the CSS all the way to `kubectl apply`, my inbox is open.
+**Product / frontend** &nbsp;`TypeScript` `React` `Next.js` `Tailwind CSS` `SvelteKit`
 
-📫 [LinkedIn](https://www.linkedin.com/in/mgarfer) · [mjgarciadev14@gmail.com](mailto:mjgarciadev14@gmail.com) · [Portfolio](https://www.matiasgarcia.dev/)
+**Backend / data** &nbsp;`Python` `Django` `Django REST Framework` `FastAPI` `Celery` `Redis` `PostgreSQL` `TimescaleDB`
+
+**Infra** &nbsp;`Docker` `Kubernetes` `GitLab CI` `Flux` `Grafana` `Prometheus` `Loki` `Sentry`
+
+**AI tooling** &nbsp;`Claude Code`, every day: skills, hooks and a test-first workflow
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/mgarfer/) · [mjgarciadev14@gmail.com](mailto:mjgarciadev14@gmail.com) · [matiasgarcia.dev](https://matiasgarcia.dev)
+
+<img src="assets/footer.svg" alt="Build, lead, ship." width="100%">
